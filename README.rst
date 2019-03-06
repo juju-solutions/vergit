@@ -1,5 +1,5 @@
-Git Version
-===========
+vergit
+======
 
 A simple tool for extracting version information from git tags and formatting
 it with optional post-release commit info.
@@ -15,7 +15,7 @@ Installation
 
 Install from PyPI::
 
-    pip install git-version
+    pip install vergit
 
 
 Usage
@@ -23,7 +23,7 @@ Usage
 
 Full usage::
 
-    git-version [-h] [--format {long,short,default,json}] [path]
+    vergit [-h] [--format {long,short,default,json}] [path]
 
 The ``path`` can be omitted and defaults to the current directory.
 

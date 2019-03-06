@@ -1,0 +1,3 @@
+VERSION
+dist/
+*.egg-info

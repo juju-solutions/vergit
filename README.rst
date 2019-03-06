@@ -42,13 +42,13 @@ If the current commit is tagged with ``v1.0.0``::
     $ vergit
     1.0.0
 
-    $ vergit --format=short
+    $ vergit --format short
     1.0.0
 
-    $ vergit --format=long
+    $ vergit --format long
     1.0.0+git-0-123abcd
 
-    $ vergit --format=json
+    $ vergit --format json
     {"version": "1.0.0", "git": "+git-0-123abcd", "gitn": "0", "gitsha": "123abcd", "pre_release": false}
 
 If the commit before the current is tagged with ``1.0.0``::
@@ -56,13 +56,13 @@ If the commit before the current is tagged with ``1.0.0``::
     $ vergit
     1.0.0+git-1-123abcd
 
-    $ vergit --format=short
+    $ vergit --format short
     1.0.0
 
-    $ vergit --format=long
+    $ vergit --format long
     1.0.0+git-0-123abcd
 
-    $ vergit --format=json
+    $ vergit --format json
     {"version": "1.0.0", "git": "+git-1-123abcd", "gitn": "1", "gitsha": "123abcd", "pre_release": false}
 
 If the current commit is tagged with ``v1.0.0rc1``::
@@ -70,11 +70,11 @@ If the current commit is tagged with ``v1.0.0rc1``::
     $ vergit
     1.0.0rc1+git-0-123abcd
 
-    $ vergit --format=short
+    $ vergit --format short
     1.0.0rc1
 
-    $ vergit --format=long
+    $ vergit --format long
     1.0.0rc1+git-0-123abcd
 
-    $ vergit --format=json
+    $ vergit --format json
     {"version": "1.0.0rc1", "git": "+git-0-123abcd", "gitn": "0", "gitsha": "123abcd", "pre_release": true}

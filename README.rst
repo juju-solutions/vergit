@@ -27,7 +27,6 @@ The ``path`` can be omitted and defaults to the current directory.
 There are several different formats which can be used:
 
 * **long** Always include the git revision info.
-  which is one commit newer than the 1.0.0 release.
 * **short** Never include the git revision info, only the release version.
 * **default** Uses the long format if on a pre-release or there are commits
   after the release, otherwise the short format.

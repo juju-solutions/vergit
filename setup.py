@@ -1,10 +1,14 @@
 #!/usr/bin/env python
 #
-# Copyright 2012 Canonical Ltd.  This software is licensed under the
+# Copyright 2019 Canonical Ltd.  This software is licensed under the
 # GNU General Public License version 3 (see the file LICENSE).
 
+import os
 from setuptools import setup
 
+
+with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as fh:
+    readme = fh.read()
 
 setup(
     name='git_version',
@@ -18,10 +22,10 @@ setup(
     include_package_data=True,
     maintainer='Cory Johns',
     maintainer_email='johnsca@gmail.com',
-    description=('Tool for getting version from git'),
-    long_description='Tool for getting version from git',
+    description=('Tool for getting version info from git history'),
+    long_description=readme,
     license='GPL v3',
-    url='https://github.com/johnsca/git-version',
+    url='https://github.com/juju-solutions/git-version',
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",

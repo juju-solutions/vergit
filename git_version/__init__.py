@@ -24,10 +24,13 @@ def _scm_version(repo_path):
         if version.startswith('v'):
             version = version[1:]
         pv = parse_version(version)
+        if gitsha.startswith('g'):
+            gitsha = gitsha[1:]
         return {
             'version': version,
             'git': '+git-{}-{}'.format(gitn, gitsha),
             'gitn': int(gitn),
+            'gitsha': gitsha,
             'pre_release':  pv.is_prerelease,
         }
     except CalledProcessError:
